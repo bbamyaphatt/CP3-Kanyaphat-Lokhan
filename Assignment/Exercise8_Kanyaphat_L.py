@@ -11,9 +11,6 @@ menu = {
     "Thai Tea": 70
 }
 
-# drink name
-drink_name_list = list(menu.keys())
-
 if username == "somchai" and password == 1234:
     print("Welcome K. Somchai to Somsri coffee")
 
@@ -27,7 +24,7 @@ if username == "somchai" and password == 1234:
     # order
     user_order = input("What would you like to order?\n"
                        ":")
-    if user_order in drink_name_list:
+    if user_order in menu.keys():
         user_qty = int(input("How many cups?\n"
                              ":"))
         total_price = menu[user_order] * user_qty
