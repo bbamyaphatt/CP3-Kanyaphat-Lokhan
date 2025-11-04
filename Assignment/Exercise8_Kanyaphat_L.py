@@ -26,7 +26,7 @@ if username == "somchai" and password == 1234:
 
     # order
     user_order = input("What would you like to order?\n"
-                           ":")
+                       ":")
     if user_order in drink_name_list:
         user_qty = int(input("How many cups?\n"
                              ":"))
